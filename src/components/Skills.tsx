@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Skills = () => {
   return (
@@ -6,172 +6,111 @@ const Skills = () => {
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">Habilidades Técnicas</h2>
-          <p className="section-subtitle">Dominio de metodologías y tecnologías modernas aplicadas al mundo del desarrollo</p>
+          <p className="section-subtitle">
+            Dominio de metodologías y tecnologías modernas aplicadas al mundo
+            del desarrollo
+          </p>
         </div>
-        <div className="skills-grid">
-          <div className="skill-category">
-            <h3 className="category-title">Frontend</h3>
-            <div className="skill-items">
-              <div className="skill-item">
-                <div className="skill-header">
-                  <span>React + Angular 14/17</span>
-                </div>
-                <div className="skill-bar">
-                  <div className="skill-progress" data-width="95"></div>
-                </div>
+        <section className="skills-section px-6 py-12 bg-[#f8fafc]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+            {[
+              {
+                title: "Frontend",
+                items: [
+                  "React + Angular 14/17",
+                  "JavaScript + TypeScript",
+                  "CSS3 + Tailwind",
+                  "HTML5 / jQuery",
+                ],
+              },
+              {
+                title: "Backend & Database",
+                items: [
+                  "Node.js / Express",
+                  "C# + ASP.NET Core",
+                  "APIs REST / GraphQL",
+                  "PostgreSQL / SQL Server / MySQL / MongoDB",
+                  "Redis",
+                ],
+              },
+              {
+                title: "Cloud + DevOps",
+                items: [
+                  "AWS / Azure",
+                  "Docker / Kubernetes",
+                  "Git / GitHub / Bitbucket / GitLab",
+                  "CI/CD",
+                ],
+              },
+            ].map((category, i) => (
+              <div
+                key={i}
+                className="bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transition duration-300 ease-in-out"
+              >
+                <h3 className="text-xl font-bold text-slate-800 mb-4 border-b pb-2">
+                  {category.title}
+                </h3>
+                <ul className="space-y-2 text-slate-600">
+                  {category.items.map((item, j) => (
+                    <li key={j} className="flex items-start gap-2">
+                      <span className="mt-1 w-2 h-2 bg-blue-500 rounded-full shrink-0"></span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <div className="skill-item">
-                <div className="skill-header">
-                  <span>JavaScript + Type Script</span>
-                </div>
-                <div className="skill-bar">
-                  <div className="skill-progress" data-width="90"></div>
-                </div>
-              </div>
-              <div className="skill-item">
-                <div className="skill-header">
-                  <span>CSS + Tailwind</span>
-                </div>
-                <div className="skill-bar">
-                  <div className="skill-progress" data-width="85"></div>
-                </div>
-              </div>
-              <div className="skill-item">
-                <div className="skill-header">
-                  <span>jQuery</span>
-                </div>
-                <div className="skill-bar">
-                  <div className="skill-progress" data-width="88"></div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
 
-          <div className="skill-category">
-            <h3 className="category-title">Backend & Database</h3>
-            <div className="skill-items">
-              <div className="skill-item">
-                <div className="skill-header">
-                  <span>Node.js</span>
-                </div>
-                <div className="skill-bar">
-                  <div className="skill-progress" data-width="92"></div>
-                </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                title: "IA aplicada + Automatización",
+                items: [
+                  "ChatGPT / Gemini / Claude / Grok",
+                  "GitHub Copilot / Copilot Workspace",
+                  "Make / n8n ",
+                  "Integración de APIs de IA",
+                ],
+              },
+              {
+                title: "Prototipado + Diseño UI/UX",
+                items: [
+                  "Adobe XD / Figma / Framer",
+                  "Nerd.lat / Bolt.new / Webflow",
+                  "Diseño de interfaces y flujos",
+                  "Validación de MVPs",
+                ],
+              },
+              {
+                title: "Metodologías + Gestión",
+                items: [
+                  "Agile / Scrum / Lean",
+                  "Jira / Trello / Notion",
+                  "Slack / Teams / G Suite",
+                  "Refactor de legacy + migración cloud / microservicios",
+                ],
+              },
+            ].map((category, i) => (
+              <div
+                key={i}
+                className="bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transition duration-300 ease-in-out"
+              >
+                <h3 className="text-xl font-bold text-slate-800 mb-4 border-b pb-2">
+                  {category.title}
+                </h3>
+                <ul className="space-y-2 text-slate-600">
+                  {category.items.map((item, j) => (
+                    <li key={j} className="flex items-start gap-2">
+                      <span className="mt-1 w-2 h-2 bg-blue-500 rounded-full shrink-0"></span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <div className="skill-item">
-                <div className="skill-header">
-                  <span>C# + ASP .NET Core</span>
-                </div>
-                <div className="skill-bar">
-                  <div className="skill-progress" data-width="75"></div>
-                </div>
-              </div>
-              <div className="skill-item">
-                <div className="skill-header">
-                  <span>API REST/GraphQL</span>
-                </div>
-                <div className="skill-bar">
-                  <div className="skill-progress" data-width="87"></div>
-                </div>
-              </div>
-              <div className="skill-item">
-                <div className="skill-header">
-                  <span>PostgreSQL/MySQL/SQL Server/MongoDB</span>
-                </div>
-                <div className="skill-bar">
-                  <div className="skill-progress" data-width="85"></div>
-                </div>
-              </div>
-              <div className="skill-item">
-                <div className="skill-header">
-                  <span>Redis</span>
-                </div>
-                <div className="skill-bar">
-                  <div className="skill-progress" data-width="92"></div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
-
-          <div className="skill-category">
-            <h3 className="category-title">Cloud & Control de versiones</h3>
-            <div className="skill-items">
-
-              <div className="skill-item">
-                <div className="skill-header">
-                  <span>AWS/Azure</span>
-                </div>
-                <div className="skill-bar">
-                  <div className="skill-progress" data-width="82"></div>
-                </div>
-              </div>
-              <div className="skill-item">
-                <div className="skill-header">
-                  <span>Docker/Kubernetes</span>
-                </div>
-                <div className="skill-bar">
-                  <div className="skill-progress" data-width="75"></div>
-                </div>
-              </div>
-              <div className="skill-item">
-                <div className="skill-header">
-                  <span>Git/GitHub/BitBucket/GitLab</span>
-                </div>
-                <div className="skill-bar">
-                  <div className="skill-progress" data-width="90"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="skill-category">
-            <h3 className="category-title">Metodologías + Herramientas colaborativas</h3>
-            <div className="skill-items">
-              <div className="skill-item">
-                <div className="skill-header">
-                  <span>Jira/Trello</span>
-                </div>
-                <div className="skill-bar">
-                  <div className="skill-progress" data-width="77"></div>
-                </div>
-              </div>
-              <div className="skill-item">
-                <div className="skill-header">
-                  <span>G Suite/Slack/Teams</span>
-                </div>
-                <div className="skill-bar">
-                  <div className="skill-progress" data-width="77"></div>
-                </div>
-              </div>
-              <div className="skill-items">
-              <div className="skill-item">
-                <div className="skill-header">
-                  <span>Agile/Scrum/Lean</span>
-                </div>
-                <div className="skill-bar">
-                  <div className="skill-progress" data-width="85"></div>
-                </div>
-              </div>
-              <div className="skill-item">
-                <div className="skill-header">
-                  <span>CI/CD</span>
-                </div>
-                <div className="skill-bar">
-                  <div className="skill-progress" data-width="80"></div>
-                </div>
-              </div>
-              <div className="skill-item">
-                <div className="skill-header">
-                  <span>Refactor de código legacy + Migración a cloud + Migración de arq monolíticas a microservicios</span>
-                </div>
-                <div className="skill-bar">
-                  <div className="skill-progress" data-width="77"></div>
-                </div>
-              </div>
-            </div>
-            </div>
-          </div>
-        </div>
+        </section>
       </div>
     </section>
   );
