@@ -5,6 +5,6 @@ export default defineConfig(({ command }) => ({
   base: command === 'build' ? '/cv-hergro/' : '/',
   plugins: [react()],
   preview: {
-    open: '/cv-hergro/'  // para npm run preview
+    open: '/cv-hergro/'
   }
 }))
