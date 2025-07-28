@@ -1,11 +1,10 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  base: '/cv-hergro/', 
+export default defineConfig(({ command }) => ({
+  base: command === 'build' ? '/cv-hergro/' : '/',
   plugins: [react()],
-  optimizeDeps: {
-    exclude: ['lucide-react'],
-  },
-});
+  preview: {
+    open: '/cv-hergro/'  // para npm run preview
+  }
+}))
