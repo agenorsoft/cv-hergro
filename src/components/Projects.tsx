@@ -67,7 +67,7 @@ const projects: Project[] = [
     role: 'Sr .NET Developer Full Stack',
     date: 'agosto 2020 - julio 2021',
     description: 'ERP para empresa gráfica con gestión integral',
-    image: '/images/OptimusPress.jpg',
+    image: './images/OptimusPress.jpg',
     demoLink: '#',
     codeLink: '#',
     techTags: ['.NET', 'Win Forms', 'C#', 'SQL Server'],
