@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
         {/* Imagen sin recuadro */}
         <div className="hero-image flex-shrink-0 text-center">
           <img
-            src="public/images/foto-perfil.jpg"
+            src="/images/foto-perfil.jpg"
             alt="Hernán Grosso"
             className="w-64 h-64 lg:w-80 lg:h-80 rounded-full border-4 border-white shadow-xl object-cover mx-auto"
           />
