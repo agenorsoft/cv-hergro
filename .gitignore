@@ -22,12 +22,3 @@ node_modules
 *.sw?
 .env
 
-# NO ignores:
-# dist (no lo subimos, solo su contenido)
-# index.html  ✅ se publica
-# assets/     ✅ se publica
-
-# Evitar subir el index de producción en local por error
-index.prod.html
-gh-pages/
-dist/
